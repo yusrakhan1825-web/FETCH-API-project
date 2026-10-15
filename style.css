@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loader {
+    position: absolute;
+    top:40%;
+    right: 50%;
+    z-index: 100;
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#000 0 0);
+  background: 
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+
+.show{
+    display: grid;
+}
+.hide{
+    display: none;
+}
+.text-color{
+    background: linear-gradient( #7c5343fa, #a0b6be, rgb(60, 68, 34),  rgb(133, 84, 118));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+.nav-link{
+    color: #000;
+    font-weight: 500;
+}
+.border{
+    border: none!important;
+    border-radius: 25px;
+}
+.bgcolor{
+    background:linear-gradient( rgb(213, 226, 172) , burlywood );
+}
+.color{
+    background-color: #c8cbd1ef  ;
+}
+
+.textColor{
+
+    background: linear-gradient( #7c5343fa, #a0b6be, rgb(60, 68, 34),  rgb(133, 84, 118));
+}
+.btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(30, 25, 70, 0.12);
+}
+.btn{
+    background-color: burlywood;
+    border: none;
+    width: 300px;
+}
